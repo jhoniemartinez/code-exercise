@@ -1,1 +1,43 @@
-/* normalize.css has been included before this file */
+.page {
+	padding: 20px;
+}
+
+.page form {
+	margin: 0 0 20px 0;
+}
+
+.page .form-group .search {
+	border-radius: 6px;
+	width: 100%;
+}
+
+.page .results-list {
+	margin: 20px 0 0 0;
+}
+
+.page .results-list .repo-row {
+	padding: 10px 8px;
+	margin: 5px 0;
+	border: 1px solid #dddddd;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.page .results-list .child {
+	margin: 5px 0 0 16px;
+}
+
+.page .results-list .parent:hover {
+	background-color: rgba(155, 196, 226, 0.4);
+}
+
+.page .results-list .repo-row div {
+	float: left;
+	padding: 0 0 0 10px;
+}
+
+.page .results-list .repo-row:after {
+	content: "";
+  	display: table;
+  	clear: both;
+}
