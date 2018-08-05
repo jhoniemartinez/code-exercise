@@ -88,11 +88,11 @@ export class App extends React.Component {
                 if (this.state.expanded === repo.url) {
                     rows.push(
                         <div className="repo-row child" key={ repo.url + '-child' }>
-                            <div>{ repo.language }</div>
-                            <div>{ repo.followers }</div>
-                            <div>{ repo.url }</div>
+                            <div><span>Language:</span>  { repo.language }</div>
+                            <div><span>Followers:</span>  { repo.followers }</div>
+                            <div><span>URL:</span>  <a href={repo.url} target="_blank">{ repo.url }</a></div>
                             <br />
-                            <div>{ repo.description }</div>
+                            <div className="description">{ repo.description }</div>
                         </div>
                     );
                 }
@@ -103,7 +103,7 @@ export class App extends React.Component {
 
             return (
                 <div className="results-list">
-                    <div>Search Results</div>
+                    <div className="title">Search Results</div>
                     { repos }
                 </div>
             );
