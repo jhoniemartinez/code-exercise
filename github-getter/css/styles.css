@@ -21,7 +21,7 @@ html {
 .page .form-group .search {
 	font-family: 'Alegreya', serif;
 	border-radius: 4px;
-	width: 100vh;
+	width: 100%;
 	border: none;
 	height: 43px;
 	background-image: url('/assets/search.png');
@@ -31,6 +31,7 @@ html {
 	padding: 0 0 0 45px;
 	outline: none;
 	font-size: 20px;
+	box-sizing: border-box;
 }
 
 .page .results-list {
