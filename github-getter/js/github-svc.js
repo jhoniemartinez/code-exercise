@@ -23,6 +23,6 @@ const axiosCache = axios.create({
 
 export const GithubSvc = {
 	search: (keyword) => {
-		Promise.reject()
+		axiosCache.get('https://api.github.com/legacy/repos/search/' + keyword);
 	}
 };

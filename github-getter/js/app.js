@@ -48,7 +48,8 @@ export class App extends React.Component {
                         this.setState(() => {
                             let newState = {
                                 searching: false,
-                                list: response.data.repositories
+                                list: response.data.repositories,
+                                keyword: ''
                             };
 
                             if (!response.data.repositories.length) {
@@ -58,7 +59,7 @@ export class App extends React.Component {
                             return newState;
                         });
                     }, (error) => {
-                        this.setState({ searching: false, list: [], friendlyMessage: "Whoops! Github couldn't handle that last search. Try a different search." });
+                        this.setState({ searching: false, list: [], friendlyMessage: "Whoops! Github couldn't handle that last query. Try a different search." });
                     }
                 );
             });
